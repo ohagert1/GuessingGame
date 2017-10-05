@@ -94,7 +94,8 @@ button {
   text-align: center;
   border-top: solid 2px lightgrey;
   border-left: solid 2px lightgrey;
-  font-size: 350%;
+  box-shadow: 0px 10px 15px rgba(0,0,0,.2);
+  font-size: 400%;
   outline-width: 0px;
   background-color: rgba(255, 255, 255, 0.75)
 }
@@ -106,7 +107,8 @@ button {
   position: absolute;
   top: 70%;
   left: 70%;
-  background-color: rgba(29, 189, 29, 1)
+  background-color: rgba(29, 189, 29, 1);
+  box-shadow: 0px 10px 15px rgba(0,0,0,.2);
 }
 
 #menu-btns {
