@@ -84,11 +84,11 @@ $(document).ready(function() {
 		if(!newGame.over) {
 			var newGuess = $('#player-input').val();
 			var result = newGame.playersGuessSubmission(newGuess);
+			$('#title').text(result);
 			if(result != "That is an invalid guess." && result != "You have already guessed that number.") {
 				if(newGame.pastGuesses.length <= 5) {
 					$('.guess').eq(newGame.pastGuesses.length - 1).text(newGuess);
 				}
-				$('#title').text(result);
 				if(result === 'You Win!' || result === 'You Lose.') {
 					newGame.over = true;
 				}
