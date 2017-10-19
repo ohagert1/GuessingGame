@@ -119,7 +119,7 @@ $(document).ready(function() {
 		$(this).animate({'top' : '+=2px'}, 100);
 	});
 	$('#hint').click(function(){
-		alert(newGame.provideHint());
+		$('#title').text(newGame.provideHint());
 	})
 });
 
